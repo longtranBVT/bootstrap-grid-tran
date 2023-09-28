@@ -66,8 +66,8 @@
 
         <!--email section-->
         <div class="row row-cols-1">
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
+          <div class="col" id="selected">
+            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25 bg-primary text-white">
               Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
               example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
               of a document, such as font, typography, and layout
@@ -124,8 +124,34 @@
           </div>
         </div>
     </div>
-  </div>
+      <!-- open email section -->
+  <div class="h-100 p-0 col-md-7 col-lg-5 d-none d-md-block d-lg-block">
 
+    <div class="bg-light w-80 m-4 mb-0 rounded-5" id="col-3-opened-email-div">
+        <div class="row h-75 d-inline-block ">
+          <div class="col-11 m-4 fs-5" >Email<br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, impedit nam facere repellendus dignissimos illo fugiat recusandae rerum eveniet porro voluptatibus odio totam dolorum sint magnam quam laboriosam itaque ad.</div>
+        </div>
+    
+        <!-- reply box -->
+        <div class="bg-dark opacity-50" id="col-3-reply-email-div">
+
+            
+                <div class="col-11 fs-5 mb-4 ms-4 text-white" > <br>  Reply <br> </div>
+                <div class="form-floating d-flex justify-content-center text-dark">
+                  <textarea type="text" class="form-control w-75 h-100 fs-5" id="replay-text-area" placeholder="Reply here"></textarea>
+                </div>
+
+        <!-- reply button -->
+        <div class="d-flex justify-content-end ms-3 w-100 mt-2 ">
+            <button type="button" class="btn btn-secondary w-25 fs-5 rounded-5">Send</button>
+        </div>
+
+
+
+
+    </div>
+</div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
