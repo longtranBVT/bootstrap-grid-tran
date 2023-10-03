@@ -13,13 +13,15 @@
 </head>
 
 <!-- nav bar -->
+
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary me-auto mb-2 mb-lg-0 border-bottom border-dark">
     <div class="container">
-      <a class="navbar-brand">Navbar</a>
-      <div class="d-none d-sm-block">
+      <a class="navbar-brand" href="#">
+      <img src="Assets/icon.png" alt="Grey Knight" width="45" height="34"></a>
+      <div class="d-none d-sm-block w-50">
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search inbox" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
@@ -29,22 +31,22 @@
         </li>
       </ul>
 
-<!-- offcanvas account management stuff -->
+      <!-- offcanvas account management stuff -->
     </div>
   </nav>
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Account</h5>
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Yoonie</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-        etc.
-      </div>
+      <button class="btn btn-success w-100 m-1"><i class="fa-solid"></i>Account</button>
+      <button class="btn btn-success w-100 m-1"><i class="fa-solid"></i>Change Password</button>
+      <button class="btn btn-success w-100 m-1"><i class="fa-solid"></i>Logout</button>
+      <button class="btn btn-danger w-100 m-1"><i class="fa-solid"></i>Delete Account</button>
       <div class="d-block d-sm-none">
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search inbox" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
@@ -60,97 +62,119 @@
         <button class="btn btn-light w-50 m-1"><i class="fa-solid"></i> Drafts</button>
         <button class="btn btn-light w-50 m-1"><i class="fa-solid"></i> Sent</button>
         <button class="btn btn-light w-50 m-1"><i class="fa-solid"></i> Trash</button>
+        <div class="d-flex justify-content-center ms-1 w-100 mt-2">
+          <button type="button" class="btn btn-secondary w-50 fs-5 rounded-5">Compose</button>
+        </div>
       </div>
     </div>
     <div class="h-100 p-0 col-md-5 d-block col-lg-4 rounded-3 remove-scrollbar" id="col-2-email-section">
 
-        <!--email section-->
-        <div class="row row-cols-1">
-          <div class="col" id="selected">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25 bg-primary text-white">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
-          </div>
-          <div class="col ">
-            <div class="p-1 m-3 mb-0 pb-4 border-bottom border-dark border-opacity-25">
-              Lorem ipsum <br> is a dummy text used to replace text in some areas <br> just for the purpose of an
-              example. It can be used in publishing and graphic design. It is used to demonstrate the graphics elements
-              of a document, such as font, typography, and layout
-            </div>
+      <!--email section-->
+      <div class="row row-cols-1">
+        <div class="card bg-primary text-white " style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Inquisitor Arrival Imminent</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Inquisitorial Transmission</h6>
+            <p class="card-text">Dear Commander of the Baldeful Edict,</p>
+            <p class="card-text">In the name of the God-Emperor, prepare for my arrival. Thank the God-Emperor I found
+              you, I must comandeer this vessel at once! I am aware that your vessel...</p>
+            <a href="#" class="card-link text-white">Quick Reply</a>
+            <a href="#" class="card-link text-white">Forward</a>
           </div>
         </div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Baleful Edict Damage Report</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Vessel damage post-battle report</h6>
+            <p class="card-text">Dear commander,</p>
+            <p class="card-text">I am attaching the post-battle report for your viewing. As you may already know, while
+              pursuing the Demon lord at Gaheris, we had to travel through the warpstorm...</p>
+            <a href="#" class="card-link">Quick Reply</a>
+            <a href="#" class="card-link">Forward</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Urgent: Demon Threatens Our World</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Demonic Invasion in Hexos</h6>
+            <p class="card-text">My Respected Knight Commander,</p>
+            <p>I hope this missive finds you in the Emperor's light, and I pray that the strength of your faith remains
+              unwavering in these dark times. I write to you today with dire news...</p>
+            <a href="#" class="card-link">Quick Reply</a>
+            <a href="#" class="card-link">Forward</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Grey Knights Recruitment</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">This year recruitment for the Grey Knights</h6>
+            <p class="card-text">Attached is a list of potential candidate for the Grey Knights, please consider them
+              for your chapter...</p>
+            <a href="#" class="card-link">Quick Reply</a>
+            <a href="#" class="card-link">Forward</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Weapon Upgrades</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Mastercrafted Force Weapons</h6>
+            <p class="card-text">Brother Knights, please report to the Barrack to replace your standard force weapon
+              with master crafted ones. This shipment includes...</p>
+            <a href="#" class="card-link">Quick Reply</a>
+            <a href="#" class="card-link">Forward</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Chapter Combat Doctrine Review</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Mandatory Combat Doctrine Review</h6>
+            <p class="card-text">All Knight Justicars, Templars, Purfiers, Interceptor, Purgator, and Apothecary report
+              to the Castellan Champion to review combat procedure...</p>
+            <a href="#" class="card-link">Quick Reply</a>
+            <a href="#" class="card-link">Forward</a>
+          </div>
+        </div>
+      </div>
     </div>
-      <!-- open email section -->
-  <div class="h-100 p-0 col-md-7 col-lg-5 d-none d-md-block d-lg-block">
-
-    <div class="bg-light w-80 m-4 mb-0" id="col-3-opened-email-div">
+    <!-- open email section -->
+    <div class="h-100 col-md-7 col-lg-5 d-none d-md-block d-lg-block">
+      <div class="bg-light m-2" id="col-3-opened-email-div">
         <div class="row h-75 d-inline-block ">
-          <div class="col-11 m-4 fs-5" >Email<br> <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, impedit nam facere repellendus dignissimos illo fugiat recusandae rerum eveniet porro voluptatibus odio totam dolorum sint magnam quam laboriosam itaque ad.</div>
+          <div class="col-11 m-2 fs-5">Inquisitor Arrival Imminent<br> <br>Dear Commander of the Baldeful Edict, In the
+            name of the God-Emperor, prepare for my arrival. Thank the God-Emperor I found you, I must comandeer this
+            vessel at once! I am aware that your vessel is in need of immediate repair, but heresy does not operate at
+            our convenience. My destination is Koramar Prime, within this very system. Not such a taxing journey, I'd
+            expect. The Inquisition has identified a source of great infestation that requires immediate investigation.
+            I trust that I will have your full cooperation regarding this matter. I'm looking forward to meeting you on
+            your ship. <br><br>
+            <p>Kind regards,</p>
+            <p>Inquisitor Vakir</p>
+          </div>
         </div>
-    
         <!-- reply box -->
-        <div class="bg-dark opacity-50" id="col-3-reply-email-div">
-
-            
-                <div class="col-11 fs-5 mb-4 ms-4 text-white" > <br>  Reply <br> </div>
-                <div class="form-floating d-flex justify-content-center text-dark">
-                  <input type="text" class="form-control w-75 h-100 fs-5" id="replay-text-area" placeholder="Reply here"></input>
-                </div>
-
-        <!-- reply button -->
-        <div class="d-flex justify-content-end ms-3 w-100 mt-2 ">
-            <button type="button" class="btn btn-secondary w-25 fs-5 rounded-5">Send</button>
+        <div class="mb-3 w-75">
+          <label for="reply-box" class="form-label">Reply</label>
+          <textarea class="form-control" id="reply-box" rows="3"></textarea>
         </div>
-
-
-
-
+        <!-- reply button -->
+        <div class="d-flex justify-content-start ms-3 w-100 mt-2 ">
+          <button type="button" class="btn btn-secondary w-25 fs-5 rounded-5">Send</button>
+        </div>
+      </div>
+      <div class="d-lg-none d-xl-none">
+        <button type="button" class="btn btn-secondary w-50 fs-5 rounded-5">Compose</button>
+      </div>
     </div>
-</div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
