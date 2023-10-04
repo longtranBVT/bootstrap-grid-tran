@@ -7,3 +7,8 @@
 .navbar{
     background-color: #EBEBF0;
 }
+.compose-hover{
+    position: absolute;
+    bottom: 30px;
+    margin-right: 40px;
+}
